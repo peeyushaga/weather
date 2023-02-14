@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>weather</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-left">
+      <form id="location-input">
+        <input class = "search-input" type="text" placeholder="Search for cities" name="fsearch">
+<!--         <button type="submit"></button> -->
+      </form>
+
+      <div class="first-box">
+      <div class="current-data">
+        <p id = "city-name" class="city-name">DELHI</p>
+        <img class = "weather-icon" src = "/assets/clear-day.svg">
+        <div class = "cant-name-any-further">
+        <h1 id = "current-temperature" class="current-temperature">31°</h1>
+          <p class="condition-type">Feels Like: <span id = "feels-like" class="condition-value">30°</span></p>
+           
+        </div>
+        
+<!--         <p>Sunny</p> -->
+      </div>
+       <div class="airconditions">
+        <span><span class = "div-class-heading bg-red">Air Conditions</span></span>
+        <div id ="conditions"  class="conditions-grid">
+          <div class="condition">
+            <p class="condition-type">Wind Speed</p>
+            <h1 class="condition-value">5Km</h1>
+          </div>
+          <div class="condition">
+            <p class="condition-type">Humidity</p>
+            <h1 class="condition-value">30°</h1>
+          </div>
+          <div class="condition">
+            <p class="condition-type">Max Temp</p>
+            <h1 class="condition-value">30°</h1>
+          </div>
+          <div class="condition">
+            <p class="condition-type">Min Temp</p>
+            <h1 class="condition-value">30°</h1>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      
+      <div class="todaysforecast">
+        <span><span class = "div-class-heading bg-green">Upcoming Forecast</span></span>
+        <div class="forecast-grid">
+          <div  id ="day-time-1" class="forecast">
+            <p class="day-time">6:00 AM</p>
+            <img class = "day-weather-icon" src = "/assets/clear-day.svg">
+            <p class="time-temperature">25°</p>
+          </div>
+          <div id ="day-time-2" class="forecast">
+            <p class="day-time">6:00 AM</p>
+            <img class = "day-weather-icon" src = "/assets/rain.svg">
+            <p class="time-temperature">25°</p>
+          </div>
+          <div id ="day-time-3" class="forecast">
+            <p class="day-time">6:00 AM</p>
+            <img class = "day-weather-icon" src = "/assets/partly-cloudy-night.svg">
+            <p class="time-temperature">25°</p>
+          </div>
+          <div id ="day-time-4" class="forecast">
+            <p class="day-time">6:00 AM</p>
+            <img class = "day-weather-icon" src = "/assets/clear-night.svg">
+            <p class="time-temperature">2°</p>
+          </div>
+          <div id ="day-time-5" class="forecast">
+            <p class="day-time">6:00 AM</p>
+            <img class = "day-weather-icon" src = "/assets/clear-night.svg">
+            <p class="time-temperature">25°</p>
+          </div>
+          <div id ="day-time-6" class="forecast">
+            <p class="day-time">6:00 AM</p>
+            <img class = "day-weather-icon" src = "/assets/clear-day.svg">
+            <p class="time-temperature">25°</p>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+
+
+    <div class="col-right">
+      <span><span class = "div-class-heading bg-purple">5 Day Forecast</span></span>
+        <div class="five-day-forecast-box">
+          <div class="forecast-box">
+            <p class="day-date">16 Feb</p>
+            <div class="day-weather">
+              <img class = "forecast-weather-icon" src = "/assets/rain.svg">
+<!--               <p class="day-time">Sunny</p> -->
+            </div>
+            <p class="day-time">36°/12°</p>
+          </div>
+          <div class="forecast-box">
+            <p class="day-date">17 Feb</p>
+            <div class="day-weather">
+              <img class = "forecast-weather-icon" src = "/assets/clear-day.svg">
+<!--               <p class="day-time">Sunny</p> -->
+            </div>
+            <p class="day-time">36°/12°</p>
+          </div>
+          <div class="forecast-box">
+            <p class="day-date">18 Feb</p>
+            <div class="day-weather">
+              <img class = "forecast-weather-icon" src = "/assets/partly-cloudy-day.svg">
+<!--               <p class="day-time">Sunny</p> -->
+            </div>
+            <p class="day-time">36°/12°</p>
+          </div>
+          <div class="forecast-box">
+            <p class="day-date">19 Feb</p>
+            <div class="day-weather">
+              <img class = "forecast-weather-icon" src = "/assets/clear-day.svg">
+<!--               <p class="day-time">Sunny</p> -->
+            </div>
+            <p class="day-time">36°/12°</p>
+          </div>
+          <div class="forecast-box">
+            <p class="day-date">20 Feb</p>
+            <div class="day-weather">
+              <img class = "forecast-weather-icon" src = "/assets/snow.svg">
+<!--               <p class="day-time">Sunny</p> -->
+            </div>
+            <p class="day-time">36°/12°</p>
+          </div>
+      <p class = "warning"><br>*The 5 day forecast is currently static.</p>
+          </div>
+        </div>
+    </div>
+    
+    
+  </div>
+<script src="script.js"></script>
+</body>
+
+</html>
